@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GRC Portfolio — Károly Mathe</title>
+<meta name="description" content="Governance, risk and compliance projects: qualitative risk assessment, framework mapping (NIST CSF 2.0, ISO 27001 Annex A), treatment roadmaps.">
+<style>
+:root{
+  --bg:#0c0f0e; --panel:#121614; --panel2:#161b19; --line:#242b28;
+  --ink:#e8e6df; --muted:#8a938c; --amber:#e0a53a; --green:#6fbf8f; --red:#e05252;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--mono);font-size:15px;line-height:1.6}
+a{color:var(--amber);text-decoration:none}
+a:hover{text-decoration:underline}
+a:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+header{border-bottom:1px solid var(--line);padding:18px 0}
+.mast{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.mast .id{font-size:13px;letter-spacing:.18em;color:var(--muted)}
+.mast .id b{color:var(--ink);font-weight:600}
+.mast nav{display:flex;gap:18px;font-size:13px}
+.crumb{font-size:12px;color:var(--muted);letter-spacing:.12em;margin-top:6px}
+.hero{padding:72px 0 48px;border-bottom:1px solid var(--line)}
+.hero .eyebrow{color:var(--amber);font-size:12px;letter-spacing:.3em;text-transform:uppercase}
+.hero h1{font-size:clamp(34px,6vw,58px);font-weight:700;letter-spacing:-.01em;margin:14px 0 18px;line-height:1.08}
+.hero h1 em{font-style:normal;color:var(--amber)}
+.hero p{max-width:640px;color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));border:1px solid var(--line);border-radius:8px;overflow:hidden;margin:40px 0 0;background:var(--panel)}
+.stat{padding:20px 18px;border-right:1px solid var(--line)}
+.stat:last-child{border-right:none}
+.stat .n{font-size:30px;font-weight:700;color:var(--amber)}
+.stat .l{font-size:11.5px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-top:2px}
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+.sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:26px}
+.sec-head .num{color:var(--amber);font-size:13px;letter-spacing:.2em}
+.sec-head h2{font-size:22px;letter-spacing:.04em;text-transform:uppercase}
+.card{display:block;border:1px solid var(--line);border-radius:10px;background:var(--panel);padding:26px;transition:border-color .18s ease, transform .18s ease;color:var(--ink)}
+.card:hover{border-color:var(--amber);transform:translateY(-2px);text-decoration:none}
+.card .tag-row{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0}
+.card h3{font-size:19px;margin:10px 0 8px}
+.card h3 em{font-style:normal;color:var(--amber)}
+.card .meta{font-size:12px;color:var(--muted);letter-spacing:.14em}
+.card p{color:var(--muted);font-size:14px;max-width:640px}
+.tag{font-size:11.5px;padding:3px 10px;border:1px solid var(--line);border-radius:999px;color:var(--muted)}
+.tag.crit{color:var(--red);border-color:var(--red)}
+.tag.amb{color:var(--amber);border-color:var(--amber)}
+.tag.grn{color:var(--green);border-color:var(--green)}
+.card .stats-inline{display:flex;gap:26px;margin-top:18px;flex-wrap:wrap}
+.card .stats-inline div b{display:block;font-size:20px;color:var(--ink)}
+.card .stats-inline div span{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.planned{border-style:dashed;opacity:.75}
+.planned:hover{transform:none;border-color:var(--line)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:720px){.grid2{grid-template-columns:1fr}}
+.toolkit{display:flex;flex-wrap:wrap;gap:10px}
+footer{padding:34px 0 60px;font-size:13px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media (prefers-reduced-motion: reduce){.card{transition:none}.card:hover{transform:none}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="mast">
+      <div class="id">ANALYST // <b>KÁROLY MATHE</b></div>
+      <nav>
+        <a href="https://github.com/CharlieMathe">GitHub</a>
+        <a href="https://charliemathe.github.io/Threat-Hunting/">Threat Hunting</a>
+        <a href="https://www.linkedin.com/in/karoly-mathe/">LinkedIn</a>
+      </nav>
+    </div>
+    <div class="crumb">GRC PORTFOLIO · GOVERNANCE / RISK / COMPLIANCE · 2026</div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <div class="eyebrow">Risk // Assurance // Frameworks</div>
+    <h1>Risk <em>Register</em></h1>
+    <p>Governance, risk and compliance casework: qualitative risk assessments, control reviews against NIST CSF 2.0 and ISO/IEC 27001, and treatment roadmaps written for the people who own the risk — not just the people who run the tooling. Companion portfolio to the <a href="https://charliemathe.github.io/Threat-Hunting/">Hunt Archive</a>.</p>
+    <div class="stats">
+      <div class="stat"><div class="n">10</div><div class="l">Risks Assessed</div></div>
+      <div class="stat"><div class="n">2</div><div class="l">Critical Findings</div></div>
+      <div class="stat"><div class="n">25+</div><div class="l">Annex A Controls Mapped</div></div>
+      <div class="stat"><div class="n">6</div><div class="l">CSF 2.0 Functions</div></div>
+    </div>
+  </div>
+
+  <section>
+    <div class="sec-head"><span class="num">01</span><h2>Engagements</h2></div>
+    <a class="card" href="risk-assessment.html">
+      <div class="meta">GRC-01 · 2026 ↗</div>
+      <h3><em>Nordvale</em> — Qualitative Information Security Risk Assessment</h3>
+      <p>Ten-risk register review for a fictional mid-size industrial distributor: 5×5 scoring, business-impact framing, treatment decisions, NIST CSF 2.0 mapping, ISO 27001 Annex A gap analysis, and a 30/90-day remediation roadmap presented for a mixed technical and business committee.</p>
+      <div class="tag-row">
+        <span class="tag crit">2 Critical</span>
+        <span class="tag amb">ISO 27005 · SP 800-30</span>
+        <span class="tag">NIST CSF 2.0</span>
+        <span class="tag">ISO 27001 Annex A</span>
+        <span class="tag grn">Peer-reviewed</span>
+      </div>
+      <div class="stats-inline">
+        <div><b>10</b><span>Risks Scored</span></div>
+        <div><b>5×5</b><span>Matrix</span></div>
+        <div><b>13</b><span>Roadmap Actions</span></div>
+        <div><b>30/90</b><span>Day Plan</span></div>
+      </div>
+    </a>
+    <div style="height:18px"></div>
+    <div class="grid2">
+      <div class="card planned">
+        <div class="meta">GRC-02 · PLANNED</div>
+        <h3>Third-Party / Vendor Risk Assessment</h3>
+        <p>Supplier due-diligence workflow: questionnaire design, contractual controls, tiering and ongoing monitoring.</p>
+      </div>
+      <div class="card planned">
+        <div class="meta">GRC-03 · PLANNED</div>
+        <h3>Cyber Maturity Assessment</h3>
+        <p>Current-vs-target profile against NIST CSF 2.0 tiers with a prioritised improvement roadmap.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="num">02</span><h2>Toolkit</h2></div>
+    <div class="toolkit">
+      <span class="tag">ISO/IEC 27005</span><span class="tag">NIST SP 800-30</span><span class="tag">NIST CSF 2.0</span>
+      <span class="tag">ISO/IEC 27001:2022</span><span class="tag">Cyber Essentials</span><span class="tag">5×5 Risk Matrix</span>
+      <span class="tag">Risk Registers</span><span class="tag">PCI DSS</span><span class="tag">GDPR / DPIA</span>
+      <span class="tag">Tenable Nessus</span><span class="tag">Microsoft Sentinel</span><span class="tag">DISA STIG</span>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <div>Károly Mathe · GRC Portfolio · TLP:CLEAR</div>
+  <div><a href="https://github.com/CharlieMathe">GitHub</a> · <a href="https://charliemathe.github.io/Threat-Hunting/">Hunt Archive</a> · <a href="https://www.linkedin.com/in/karoly-mathe/">LinkedIn</a></div>
+</footer>
+</body>
+</html>
